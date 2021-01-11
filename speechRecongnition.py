@@ -22,9 +22,9 @@ def record_audio():
         try:
             voice_data = r.recognize_google(audio)
         except sr.UnknownValueError : 
-            alexis_speak('yes rabie is gay')
+            alexis_speak('good by')
         except sr.RequestError :
-            alexis_speak('yes rabie is gay')
+            alexis_speak('good by')
         return voice_data
 def resond(voice_data):
     if "what's your name" in voice_data:
